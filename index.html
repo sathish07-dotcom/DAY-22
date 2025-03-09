@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control statements</title>
+    <style>
+        body{
+            background-color: rgb(241, 199, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+        h1{
+            color: red;
+            text-align: center;
+            text-decoration: underline rgb(98, 1, 159);
+        }
+        h3{
+            color: blue;
+            text-align: center;
+        }
+        div{
+            border: 2px rgb(233, 0, 229) solid;
+        }
+        li{
+            color: brown;
+        }
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>control statementes in js</h1>
+    <h3>Control statements in JavaScript are used to control the flow of execution in a program. <br> They allow you to make decisions, repeat actions, and execute code conditionally. <br> There are three main types of control statements:
+</h3>
+<div>
+    <h1>Conditional Statements (Decision-Making)</h1>
+    These statements execute different code blocks based on conditions.
+    
+    <li>if Statement</li>
+    <p>Executes a block of code only if the condition is true.</p>
+    
+  
+  <p>  let age = 18;<br>
+    if (age >= 18) { <br>
+        console.log("You are eligible to vote.");<br>
+    }
+    </p>
+
+    <li>if-else Statement</li>
+    <p>Provides an alternative block of code when the condition is false.</p>
+ <p>
+    let num = 10;
+    if (num % 2 === 0) {<br>
+        console.log("Even number");<br>
+    } else { <br>
+        console.log("Odd number"); <br>
+    }
+    </p>
+
+    <li>if-else if-else Statement</li>
+    <p>Checks multiple conditions sequentially.</p>
+    
+  <p>
+    let marks = 85; <br>
+    if (marks >= 90) { <br>
+        console.log("Grade: A");<br>
+    } else if (marks >= 75) { <br>
+        console.log("Grade: B"); <br>
+    } else { <br>
+        console.log("Grade: C"); <br>
+    }
+    </p>
+    <li>switch Statement</li>
+    <p>Used when multiple conditions depend on the same variable.</p>
+    
+   <p>
+    let day = "Monday";<br>
+    switch (day) {<br>
+        case "Monday":<br>
+            console.log("Start of the week!");<br>
+            break;<br>
+        case "Friday":<br>
+            console.log("Weekend is coming!");<br>
+            break;<br>
+        default:<br>
+            console.log("Normal day.");<br>
+    }
+    </p>
+</div>
+
+    <script>
+
+        //IF STATEMENTES IN JAVASCRIPT
+        let temperature =-20;
+        if(temperature>=30){
+            console.log('Hot day');
+        }
+        if(temperature <0){
+            console.log('Cool Day')
+        }
+        if(temperature<30 && temperature >=0){
+            console.log('Noraml day');
+        }
+       
+
+
+        // ELSE STATEMENTES IN JAVASCRIPT
+
+        let age = 15;
+        if(age >= 18){
+            console.log('You are ready for vote');
+        } 
+         else{
+            console.log('You are not ready for vote');
+        }
+
+        //ELSE..IF STATEMENTES IN JAVASCRIPT
+
+        let time = 19;
+        if(time>= 6 && time <=12){
+            console.log('Good Morning');
+        } else if(time>= 13 && time<= 17){
+            console.log('Good Afternoon');
+        } else if(time>= 18 && time <=22){
+            console.log('Mid Night');
+        } else{
+            console.log('Good Night');
+        }
+
+
+        //SOLVE 10 PROBLEMS ON THIS TOPIC
+
+        // CREATE A TRAFFIC LIGHT SYSTEM THAT SJOWS WHAT TO DO BASED ON COLOR
+         let color = "green";
+         if(color === 'red'){
+            console.log('WAIT FOR 50S')
+         }
+         if(color === 'green'){
+            console.log('YOU CAN GO');
+         }
+         if(color === 'yellow'){
+            console.log('YOU CAN MOVE WITH IN 10S');
+         }
+         // CREATE A SEASSON CHECK SYSTEM BASED ON MONTHES
+         let month = "apirl";
+         if(month === 'jan'){
+            console.log("WINTER SEASSON");
+         } else if ( month === 'apirl'){
+            console.log('SUMMER SEASSON');
+         } else if(month === "july"){
+            console.log('RAINY SEASSON')
+         }
+
+         // CREATE A SYSTEM TO CALCULATE POPCORN PRICE BASCED ON THE SIZE CUSTOMER ASKED 
+          
+         let size = "XL"
+         if(size === 'XL'){
+            console.log('The Popcorn Price is: $250');
+         } else if(size === 'L'){
+            console.log('The Popcorn Price is: $200');
+         } else if(size === 'M'){
+            console.log('The Popcorn Price is: $100');
+         } else if (size === 'S'){
+            console.log('The Popcorn Price is: $50');
+         } else{
+            console.log('The Popcorn Price is: $0');
+         }
+
+         //STUDENT MARKS SYSTEM BY USING NESTED IF ELSE BASED ON THE MARKS
+         let marks = 38;
+         if(marks >=35&& marks <=100){
+            console.log('Pass');
+            if(marks >=85 && marks <=100){
+                console.log('Grade: A');
+            } else if(marks >=60 && marks <85){
+                console.log('Grade: B')
+            } else if(marks >= 35 && marks <59){
+                console.log('Grade : C');
+            }
+         } else{
+            console.log('Fail');
+         }
+           
+    </script>
+</body>
+</html>
