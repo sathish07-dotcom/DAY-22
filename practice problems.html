@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practive Problems Of Day-02</title>
+    <style>
+        body {
+            background-color: rgb(241, 199, 206);
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline green;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>OPEN CONSOLE</h1>
+    
+
+    <script>
+        //IF AGE >18 YOU CAN VOTE ,IF NOT YOU CAN'T VOTE
+        let personAge = 25;
+        if (personAge >= 18) {
+            console.log("You are Eligble for Vote");
+        } else {
+            console.log("You are Not-Eligble for Vote");
+        }
+
+        //WRITE A PROGRAM TO FIND A NUMBER DIVIDED BY 5,11
+        let number = 110;
+        if (number % 5 === 0 && number % 11 === 0) {
+            console.log('This number is Divisible by 5,11');
+        } else {
+            console.log('This number is Not-Divisible by 5,11');
+        }
+
+        //LARGEST OF THREE NUMBERS
+        let a = 20;
+        let b = 30;
+        let c = 35;
+        console.log('a=', a, 'b=', b, 'c=', c);
+        if (a > b && a > c) {
+            console.log('a is large');
+        } else if (b > c) {
+            console.log('b is large');
+        } else {
+            console.log('c is large');
+        }
+
+        //FIND THE GIVEN YEAR IS LEAP YEAR OR NOT
+        let year = 2024;
+        if (year % 4 === 0) {
+            console.log('Is a Leap yrar');
+        } else {
+            console.log("Non-Leap year");
+        }
+     
+        //GRADE SYSTEM
+        let marks = 76;
+        if (marks >= 90 && marks <= 100) {
+            console.log('Grade =A');
+        } else if (marks > 70 && marks <= 89) {
+            console.log('Grade =B');
+        } else if (marks >= 50 && marks <= 69) {
+            console.log('Grade = C');
+        } else if (marks >= 35 && marks <= 49) {
+            console.log('Grade =D');
+        } else {
+            console.log('Grade =Fail');
+        }
+
+        //CURRENT BILL BASED ON USE OF UNITES
+        let units = 160;
+        if (units >= 0 && units <= 50) {
+            console.log(units * 3 + " " + "Rupiess");
+        } else if (units >= 51 && units <= 100) {
+            console.log(units * 5 + " " + "Rupiess");
+        } else {
+            console.log(units * 7 + " " + "Rupiess")
+        }
+
+      
+        //IF A STRING THAT START WITH THE LETTER "a" AND HAVE LENGTH >3.WRITE A PROGRM TO FIND IF A STRING IS GOOD OR NOT
+        let str = "akhil";
+        let firstIndex = str[0];
+        console.log('firstIndex=',firstIndex);
+
+        let length = str.length;
+        console.log('length=',length);
+
+        if((str[0] === 'a' && str.length >3)){
+            console.log('IT IS A GOOD STRING');
+        } else {
+            console.log('IT IS A BAD STRING');
+        }
+         
+        let n1 = '532';
+        let n2 = '4567892';
+        console.log([n1.length]);
+    
+    //WRITE A PROGRAM TO PRINT "GOOD" IF THE NUBER IS DIVISIBLE BY 10 ANF PRINT "BAD" IF IT IS NOT
+    let num = 23;
+    if(num %10 === 0){
+        console.log(`${num} =is Good Number`);
+    } else {
+        console.log(`${num} =Bad Number`);
+    }
+
+    //TAKE USER NAME & AGE FROM PROMT AND ALERT TO THE USER AS "NAME IS AGE YEARS OLD"
+    let user_name = prompt('Enter Your name');
+    let usre_age = prompt('Enter Your age');
+    alert(`${user_name} is ${usre_age} Years Old`);
+    
+    //PRINT THE MONTS IN A QUATER
+    //Q1: JAN,FEB,MARCH
+    //Q2:APIRL,MAY,JUNE
+    //Q3:JULY,AUG,SEP
+    //Q4:OCT,NOV,DEC
+    
+    let month = 'july';
+    if(month === 'jan' || month === 'feb' || month === 'march'){
+        console.log(`${month} is First quater of the Year`);
+    } else if(month === 'apirl' || month === 'may' || month === 'june'){
+        console.log(`${month} is Second quater of the year`);
+    } else if(month === 'july' || month === 'aug' || month === 'sep'){
+        console.log(`${month} is Third quater of the year`);
+    } else if(month === 'oct' || month === 'nov' || month === 'dec'){
+        console.log(`${month} is Fourth quatre of the year`);
+    } else {
+        console.log(`${month} YOU ENTER WORNG MONTH NAME`);
+    }
+
+
+    //A STRING IS A "GOLDEN" IF IT STARTS WITH THE CHR 'a' & 'A'& LENGTH >5 IF IT IS NOT PRINT 'NOT'
+    let string = 'Aumblance';
+    console.log(string[0]);
+    console.log(string.length);
+    if((string[0] === 'A' || string[0] === 'a')  && string.length > 5){
+            console.log(`${string} is a GOLDEN string`);
+    } else {
+        console.log(`${string} is NOT a golden string`)
+    }
+    
+
+    //WRITE A PROGRMA TO CHECK IF 2 NUMBERS HAVE THE SAME LAST DIGIT
+    //EX:45672 & 67892
+
+    let x =342;
+    let y = 45632;
+    let lastDigit1 = x % 10;
+    let lastDigit2 = y % 10;
+    if(lastDigit1 === lastDigit2){
+        console.log(`${x},${y} have same last digit ${lastDigit1},${lastDigit2}`);
+    } else {
+        console.log(`${x},${y}don't have same last digit ${lastDigit1},${lastDigit2}`);
+    }
+    </script>
+</body>
+
+</html>
